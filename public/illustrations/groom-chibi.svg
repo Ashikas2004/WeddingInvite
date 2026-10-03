@@ -1,0 +1,86 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Korean-style Chibi Groom with pastel colors and white outline -->
+  
+  <!-- Background glow -->
+  <circle cx="100" cy="100" r="90" fill="url(#groomGlow)" opacity="0.3"/>
+  
+  <!-- Pants -->
+  <rect x="85" y="120" width="30" height="50" rx="5" fill="#B8B8D1" stroke="white" stroke-width="3"/>
+  <line x1="100" y1="120" x2="100" y2="170" stroke="white" stroke-width="2"/>
+  
+  <!-- Shoes -->
+  <ellipse cx="92" cy="170" rx="10" ry="5" fill="#2C1810" stroke="white" stroke-width="2"/>
+  <ellipse cx="108" cy="170" rx="10" ry="5" fill="#2C1810" stroke="white" stroke-width="2"/>
+  
+  <!-- Jacket -->
+  <path d="M100 75 L75 85 L75 120 L85 120 L85 90 L100 85 L115 90 L115 120 L125 120 L125 85 Z" 
+        fill="#E6B8FF" stroke="white" stroke-width="3" stroke-linejoin="round"/>
+  
+  <!-- Shirt/Vest -->
+  <path d="M100 75 L90 85 L90 115 L110 115 L110 85 Z" 
+        fill="#FFF5E6" stroke="white" stroke-width="2"/>
+  
+  <!-- Tie -->
+  <path d="M100 75 L97 85 L100 115 L103 85 Z" fill="#FFB6C1" stroke="white" stroke-width="1.5"/>
+  <circle cx="100" cy="75" r="3" fill="#FFB6C1" stroke="white" stroke-width="1.5"/>
+  
+  <!-- Body/Torso -->
+  <ellipse cx="100" cy="75" rx="18" ry="22" fill="#FFF5E6" stroke="white" stroke-width="3"/>
+  
+  <!-- Arms -->
+  <ellipse cx="78" cy="90" rx="7" ry="16" fill="#FFF5E6" stroke="white" stroke-width="2" transform="rotate(-15 78 90)"/>
+  <ellipse cx="122" cy="90" rx="7" ry="16" fill="#FFF5E6" stroke="white" stroke-width="2" transform="rotate(15 122 90)"/>
+  
+  <!-- Hands -->
+  <circle cx="76" cy="105" r="6" fill="#FFF5E6" stroke="white" stroke-width="2"/>
+  <circle cx="124" cy="105" r="6" fill="#FFF5E6" stroke="white" stroke-width="2"/>
+  
+  <!-- Head -->
+  <circle cx="100" cy="50" r="28" fill="#FFF5E6" stroke="white" stroke-width="3"/>
+  
+  <!-- Hair (short, neat style) -->
+  <path d="M72 42 Q70 30 80 28 Q90 26 100 27 Q110 26 120 28 Q130 30 128 42 Q128 48 125 52 L100 50 L75 52 Q72 48 72 42 Z" 
+        fill="#2C1810" stroke="white" stroke-width="2"/>
+  
+  <!-- Hair details -->
+  <path d="M85 30 Q90 28 95 30" stroke="white" stroke-width="1" opacity="0.3"/>
+  <path d="M105 30 Q110 28 115 30" stroke="white" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Eyes (cute anime style) -->
+  <ellipse cx="90" cy="48" rx="4" ry="6" fill="#2C1810"/>
+  <ellipse cx="110" cy="48" rx="4" ry="6" fill="#2C1810"/>
+  <circle cx="91" cy="46" r="1.5" fill="white"/>
+  <circle cx="111" cy="46" r="1.5" fill="white"/>
+  
+  <!-- Eyebrows -->
+  <path d="M85 42 Q90 40 95 42" stroke="#2C1810" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M105 42 Q110 40 115 42" stroke="#2C1810" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Blush -->
+  <ellipse cx="82" cy="55" rx="6" ry="4" fill="#FFB6C1" opacity="0.3"/>
+  <ellipse cx="118" cy="55" rx="6" ry="4" fill="#FFB6C1" opacity="0.3"/>
+  
+  <!-- Smile -->
+  <path d="M95 58 Q100 62 105 58" stroke="#2C1810" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Boutonniere (flower on jacket) -->
+  <circle cx="85" cy="85" r="4" fill="#FFB6C1" stroke="white" stroke-width="1"/>
+  <circle cx="85" cy="85" r="2" fill="#FFD700" opacity="0.8"/>
+  <line x1="85" y1="89" x2="85" y2="95" stroke="#90EE90" stroke-width="1.5"/>
+  
+  <!-- Pocket square -->
+  <path d="M110 88 L115 88 L113 95 L112 95 Z" fill="white" stroke="#E6B8FF" stroke-width="1"/>
+  
+  <!-- Sparkles -->
+  <path d="M140 70 L142 72 L140 74 L138 72 Z" fill="#FFD700" opacity="0.8"/>
+  <path d="M55 90 L57 92 L55 94 L53 92 Z" fill="#FFD700" opacity="0.8"/>
+  <path d="M145 110 L147 112 L145 114 L143 112 Z" fill="#FFD700" opacity="0.8"/>
+  
+  <!-- Gradients -->
+  <defs>
+    <radialGradient id="groomGlow">
+      <stop offset="0%" stop-color="#B8B8D1"/>
+      <stop offset="100%" stop-color="#E6B8FF"/>
+    </radialGradient>
+  </defs>
+</svg>

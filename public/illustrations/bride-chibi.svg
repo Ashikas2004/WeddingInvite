@@ -1,0 +1,78 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Korean-style Chibi Bride with pastel colors and white outline -->
+  
+  <!-- Background glow -->
+  <circle cx="100" cy="100" r="90" fill="url(#brideGlow)" opacity="0.3"/>
+  
+  <!-- Dress -->
+  <path d="M100 85 L70 120 L70 160 C70 165 72 170 75 170 L125 170 C128 170 130 165 130 160 L130 120 Z" 
+        fill="#FFE5EC" stroke="white" stroke-width="3" stroke-linejoin="round"/>
+  
+  <!-- Dress details -->
+  <path d="M85 120 Q100 130 115 120" stroke="#FFB6C1" stroke-width="2" fill="none" opacity="0.6"/>
+  <circle cx="100" cy="135" r="3" fill="#FFB6C1" opacity="0.8"/>
+  <circle cx="90" cy="145" r="2" fill="#FFB6C1" opacity="0.8"/>
+  <circle cx="110" cy="145" r="2" fill="#FFB6C1" opacity="0.8"/>
+  
+  <!-- Body/Torso -->
+  <ellipse cx="100" cy="75" rx="20" ry="25" fill="#FFF5E6" stroke="white" stroke-width="3"/>
+  
+  <!-- Arms -->
+  <ellipse cx="78" cy="85" rx="8" ry="18" fill="#FFF5E6" stroke="white" stroke-width="2" transform="rotate(-20 78 85)"/>
+  <ellipse cx="122" cy="85" rx="8" ry="18" fill="#FFF5E6" stroke="white" stroke-width="2" transform="rotate(20 122 85)"/>
+  
+  <!-- Hands -->
+  <circle cx="75" cy="100" r="6" fill="#FFF5E6" stroke="white" stroke-width="2"/>
+  <circle cx="125" cy="100" r="6" fill="#FFF5E6" stroke="white" stroke-width="2"/>
+  
+  <!-- Head -->
+  <circle cx="100" cy="50" r="28" fill="#FFF5E6" stroke="white" stroke-width="3"/>
+  
+  <!-- Hair -->
+  <path d="M72 45 Q70 30 85 28 Q95 25 100 26 Q105 25 115 28 Q130 30 128 45 Q130 55 125 60 L100 58 L75 60 Q70 55 72 45 Z" 
+        fill="#8B4513" stroke="white" stroke-width="2"/>
+  
+  <!-- Hair ornament (flower) -->
+  <circle cx="120" cy="40" r="8" fill="#FFB6C1" stroke="white" stroke-width="2"/>
+  <circle cx="115" cy="38" r="4" fill="#FFE5EC"/>
+  <circle cx="125" cy="38" r="4" fill="#FFE5EC"/>
+  <circle cx="120" cy="35" r="4" fill="#FFE5EC"/>
+  <circle cx="120" cy="45" r="4" fill="#FFE5EC"/>
+  
+  <!-- Veil -->
+  <path d="M75 48 Q70 50 68 70 L68 90" stroke="white" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M125 48 Q130 50 132 70 L132 90" stroke="white" stroke-width="2" fill="none" opacity="0.7"/>
+  
+  <!-- Eyes (cute anime style) -->
+  <ellipse cx="90" cy="48" rx="4" ry="6" fill="#2C1810"/>
+  <ellipse cx="110" cy="48" rx="4" ry="6" fill="#2C1810"/>
+  <circle cx="91" cy="46" r="1.5" fill="white"/>
+  <circle cx="111" cy="46" r="1.5" fill="white"/>
+  
+  <!-- Blush -->
+  <ellipse cx="82" cy="55" rx="6" ry="4" fill="#FFB6C1" opacity="0.4"/>
+  <ellipse cx="118" cy="55" rx="6" ry="4" fill="#FFB6C1" opacity="0.4"/>
+  
+  <!-- Smile -->
+  <path d="M95 58 Q100 62 105 58" stroke="#2C1810" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Bouquet -->
+  <ellipse cx="75" cy="105" rx="10" ry="12" fill="#E6B8FF" stroke="white" stroke-width="2"/>
+  <circle cx="70" cy="100" r="5" fill="#FFB6C1"/>
+  <circle cx="80" cy="100" r="5" fill="#FFE5EC"/>
+  <circle cx="75" cy="95" r="5" fill="#E6B8FF"/>
+  <circle cx="75" cy="110" r="4" fill="#FFD700" opacity="0.6"/>
+  
+  <!-- Sparkles -->
+  <path d="M140 60 L142 62 L140 64 L138 62 Z" fill="#FFD700" opacity="0.8"/>
+  <path d="M60 80 L62 82 L60 84 L58 82 Z" fill="#FFD700" opacity="0.8"/>
+  <path d="M145 100 L147 102 L145 104 L143 102 Z" fill="#FFD700" opacity="0.8"/>
+  
+  <!-- Gradients -->
+  <defs>
+    <radialGradient id="brideGlow">
+      <stop offset="0%" stop-color="#FFB6C1"/>
+      <stop offset="100%" stop-color="#E6B8FF"/>
+    </radialGradient>
+  </defs>
+</svg>
