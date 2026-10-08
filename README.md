@@ -66,6 +66,9 @@ sis_invitation/
 │           ├── couple-1.svg to couple-3.svg
 │           ├── prewedding-1.svg to prewedding-3.svg
 │           └── family-1.svg to family-3.svg
+├── .github/
+│   └── workflows/
+│       └── deploy-pages.yml
 ├── src/
 │   ├── app/
 │   │   ├── layout.tsx
@@ -100,11 +103,11 @@ sis_invitation/
 │   │   └── useScrollY.ts
 │   ├── lib/
 │   │   ├── animations.ts
+│   │   ├── assetPath.ts
 │   │   └── countdown.ts
 │   └── types/
 │       └── wedding.ts
 ├── next.config.ts
-├── vercel.json
 └── package.json
 ```
 
@@ -175,23 +178,19 @@ Replace the SVG files in `public/illustrations/`:
 
 ## 🚀 Deployment
 
-### Vercel (Recommended)
+### GitHub Pages
 
-```bash
-# Install Vercel CLI
-npm i -g vercel
+The `Deploy to GitHub Pages` workflow builds and publishes the static site on pushes
+to `main`. In the repository settings, set **Pages → Build and deployment → Source**
+to **GitHub Actions**. The project URL is served from `/WeddingInvite/`.
 
-# Deploy
-vercel
-```
+The workflow supplies `NEXT_PUBLIC_BASE_PATH=/WeddingInvite` at build time so
+Next.js chunks and public images load correctly from the project-site subpath.
 
-### Other Platforms
+### Vercel
 
-The project can be deployed to any platform that supports Next.js:
-- Netlify
-- AWS Amplify
-- Railway
-- Render
+Deploy with the Vercel CLI or connect the repository in the Vercel dashboard.
+Leave `NEXT_PUBLIC_BASE_PATH` unset to serve from the domain root.
 
 ## 📄 License
 

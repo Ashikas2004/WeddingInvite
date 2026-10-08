@@ -17,7 +17,7 @@ export function VenueSection({ data }: VenueSectionProps) {
       id="venue"
       className="section-spacing"
       style={{
-        background: 'linear-gradient(160deg, #f3e5f5 0%, #fce4ec 50%, #fff9f0 100%)',
+        background: 'linear-gradient(160deg, #e4eddf 0%, #fce4ec 50%, #fff9f0 100%)',
       }}
     >
       <div className="container mx-auto px-6">
@@ -32,13 +32,13 @@ export function VenueSection({ data }: VenueSectionProps) {
         >
           <h2
             className="text-5xl md:text-6xl mb-4"
-            style={{ fontFamily: 'var(--font-script)', color: '#7c4f7c' }}
+            style={{ fontFamily: 'var(--font-script)', color: '#365d43' }}
           >
             Venue
           </h2>
           <p
             className="text-base md:text-lg"
-            style={{ fontFamily: 'var(--font-body)', color: '#9b7fa6' }}
+            style={{ fontFamily: 'var(--font-body)', color: '#5f7b64' }}
           >
             Where our journey begins
           </p>
@@ -59,15 +59,15 @@ export function VenueSection({ data }: VenueSectionProps) {
               {/* Pin icon */}
               <div
                 className="inline-flex items-center justify-center w-16 h-16 rounded-full mb-5"
-                style={{ background: 'linear-gradient(135deg, #f8d7e3, #d8c8f2)' }}
+                style={{ background: 'linear-gradient(135deg, #f8d7e3, #dce8d6)' }}
               >
-                <MapPin size={28} style={{ color: '#9b7fa6' }} />
+                <MapPin size={28} style={{ color: '#5f7b64' }} />
               </div>
 
               {/* Venue name */}
               <h3
                 className="text-2xl md:text-3xl font-semibold mb-2"
-                style={{ fontFamily: 'var(--font-serif)', color: '#7c4f7c' }}
+                style={{ fontFamily: 'var(--font-serif)', color: '#365d43' }}
               >
                 {venue.name}
               </h3>
@@ -75,13 +75,13 @@ export function VenueSection({ data }: VenueSectionProps) {
               {/* Address lines */}
               <p
                 className="text-base md:text-lg mb-1"
-                style={{ fontFamily: 'var(--font-body)', color: '#9b7fa6' }}
+                style={{ fontFamily: 'var(--font-body)', color: '#5f7b64' }}
               >
                 {venue.address}
               </p>
               <p
                 className="text-base md:text-lg mb-6"
-                style={{ fontFamily: 'var(--font-body)', color: '#9b7fa6' }}
+                style={{ fontFamily: 'var(--font-body)', color: '#5f7b64' }}
               >
                 {venue.city}
               </p>
@@ -121,7 +121,7 @@ export function VenueSection({ data }: VenueSectionProps) {
             >
               <p
                 className="text-xs"
-                style={{ fontFamily: 'var(--font-body)', color: '#c4a8d4' }}
+                style={{ fontFamily: 'var(--font-body)', color: '#5f7b64' }}
               >
                 Both events are held at the same venue
               </p>

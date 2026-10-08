@@ -15,7 +15,7 @@ interface IntroScreenProps {
  */
 export function IntroScreen({ onComplete }: IntroScreenProps) {
   const [isVisible, setIsVisible] = useState(true);
-  const { prefersReduced, durationMultiplier } = useReducedMotion();
+  const { prefersReduced } = useReducedMotion();
 
   useEffect(() => {
     const hideDelay = prefersReduced ? 100 : 3200;
@@ -43,14 +43,14 @@ export function IntroScreen({ onComplete }: IntroScreenProps) {
           className="fixed inset-0 z-[200] flex flex-col items-center justify-center overflow-hidden"
           style={{
             background:
-              'linear-gradient(135deg, #f8d7e3 0%, #d8c8f2 35%, #ffd8c2 70%, #f6d37a 100%)',
+              'linear-gradient(135deg, #f8d7e3 0%, #dce8d6 35%, #ffd8c2 70%, #f6d37a 100%)',
           }}
         >
           {/* Animated blobs for depth */}
           <div
             className="absolute w-96 h-96 rounded-full opacity-30 animate-blob"
             style={{
-              background: 'radial-gradient(circle, #f8d7e3, #d8c8f2)',
+              background: 'radial-gradient(circle, #f8d7e3, #dce8d6)',
               top: '-5rem',
               left: '-5rem',
               filter: 'blur(60px)',
@@ -59,7 +59,7 @@ export function IntroScreen({ onComplete }: IntroScreenProps) {
           <div
             className="absolute w-80 h-80 rounded-full opacity-25 animate-blob"
             style={{
-              background: 'radial-gradient(circle, #ffd8c2, #f6d37a)',
+              background: 'radial-gradient(circle, #dce8d6, #f6d37a)',
               bottom: '-4rem',
               right: '-4rem',
               filter: 'blur(60px)',
@@ -139,7 +139,7 @@ export function IntroScreen({ onComplete }: IntroScreenProps) {
                     top: p.top,
                     width: p.size,
                     height: p.size,
-                    background: ['#f8d7e3', '#d8c8f2', '#ffd8c2', '#f6d37a', '#fff'][i % 5],
+                    background: ['#f8d7e3', '#dce8d6', '#ffd8c2', '#f6d37a', '#fff'][i % 5],
                     opacity: 0.7,
                   }}
                   animate={{ y: [0, -18, 0], rotate: [0, 20, 0] }}

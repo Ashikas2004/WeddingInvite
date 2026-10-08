@@ -38,7 +38,7 @@ export function NavBar({ links }: NavBarProps) {
         {/* Logo */}
         <span
           className="text-2xl md:text-3xl select-none"
-          style={{ fontFamily: 'var(--font-script)', color: '#9b7fa6' }}
+          style={{ fontFamily: 'var(--font-script)', color: '#5f7b64' }}
         >
           A &amp; J
         </span>
@@ -49,13 +49,13 @@ export function NavBar({ links }: NavBarProps) {
             <button
               key={link.href}
               onClick={() => handleNavClick(link.href)}
-              className="text-sm font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#f6d37a] rounded px-1 py-0.5"
+              className="text-sm font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#547a58] rounded px-1 py-0.5"
               style={{
                 fontFamily: 'var(--font-body)',
-                color: '#9b7fa6',
+                color: '#5f7b64',
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = '#7c4f7c')}
-              onMouseLeave={(e) => (e.currentTarget.style.color = '#9b7fa6')}
+              onMouseEnter={(e) => (e.currentTarget.style.color = '#365d43')}
+              onMouseLeave={(e) => (e.currentTarget.style.color = '#5f7b64')}
             >
               {link.label}
             </button>
@@ -65,8 +65,8 @@ export function NavBar({ links }: NavBarProps) {
         {/* Mobile hamburger */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#f6d37a]"
-          style={{ color: '#9b7fa6' }}
+          className="md:hidden p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#547a58]"
+          style={{ color: '#5f7b64' }}
           aria-label={isOpen ? 'Close menu' : 'Open menu'}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -91,8 +91,8 @@ export function NavBar({ links }: NavBarProps) {
                 <button
                   key={link.href}
                   onClick={() => handleNavClick(link.href)}
-                  className="text-left py-3 px-2 text-base rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#f6d37a]"
-                  style={{ fontFamily: 'var(--font-body)', color: '#9b7fa6' }}
+                  className="text-left py-3 px-2 text-base rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#547a58]"
+                  style={{ fontFamily: 'var(--font-body)', color: '#5f7b64' }}
                   onMouseEnter={(e) => (e.currentTarget.style.background = 'rgba(216, 200, 242, 0.2)')}
                   onMouseLeave={(e) => (e.currentTarget.style.background = 'transparent')}
                 >

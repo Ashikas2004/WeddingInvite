@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { weddingData } from '@/data/wedding';
-import { NavBar } from '@/components/ui/NavBar';
 import { IntroScreen } from '@/components/sections/IntroScreen';
 import { HeroSection } from '@/components/sections/HeroSection';
 import { CoupleSection } from '@/components/sections/CoupleSection';
@@ -36,8 +35,6 @@ export default function Home() {
       )}
 
       <div className="relative">
-        <NavBar links={weddingData.navLinks} />
-
         <main>
           <HeroSection data={weddingData} />
           <CoupleSection data={weddingData} />

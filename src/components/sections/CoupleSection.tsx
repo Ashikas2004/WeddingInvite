@@ -4,6 +4,7 @@ import { motion } from 'motion/react';
 import Image from 'next/image';
 import { ExtendedWeddingData } from '@/data/wedding';
 import { GlassCard } from '@/components/ui/GlassCard';
+import { assetPath } from '@/lib/assetPath';
 
 interface CoupleSectionProps {
   data: ExtendedWeddingData;
@@ -19,7 +20,7 @@ export function CoupleSection({ data }: CoupleSectionProps) {
     <section
       id="couple"
       className="section-spacing"
-      style={{ background: 'linear-gradient(160deg, #fffaf2 0%, #f3e5f5 40%, #fce4ec 100%)' }}
+      style={{ background: 'linear-gradient(160deg, #fffaf2 0%, #e4eddf 40%, #fce4ec 100%)' }}
     >
       <div className="container mx-auto px-6">
 
@@ -33,13 +34,13 @@ export function CoupleSection({ data }: CoupleSectionProps) {
         >
           <h2
             className="text-5xl md:text-6xl mb-4"
-            style={{ fontFamily: 'var(--font-script)', color: '#7c4f7c' }}
+            style={{ fontFamily: 'var(--font-script)', color: '#365d43' }}
           >
             The Happy Couple
           </h2>
           <p
             className="text-base md:text-lg max-w-xl mx-auto"
-            style={{ fontFamily: 'var(--font-body)', color: '#9b7fa6' }}
+            style={{ fontFamily: 'var(--font-body)', color: '#5f7b64' }}
           >
             Two hearts, one love story. Join us as we begin our forever together.
           </p>
@@ -60,10 +61,10 @@ export function CoupleSection({ data }: CoupleSectionProps) {
               <div className="flex justify-center mb-6">
                 <div
                   className="relative w-36 h-36 rounded-full overflow-hidden"
-                  style={{ background: 'linear-gradient(135deg, #fce4ec, #f3e5f5)', boxShadow: '0 4px 20px rgba(248, 215, 227, 0.5)' }}
+                  style={{ background: 'linear-gradient(135deg, #fce4ec, #e4eddf)', boxShadow: '0 4px 20px rgba(92, 130, 91, 0.2)' }}
                 >
                   <Image
-                    src="/illustrations/bride-chibi.svg"
+                    src={assetPath('/illustrations/bride-chibi.svg')}
                     alt="Bride illustration"
                     fill
                     className="object-contain p-2"
@@ -75,13 +76,13 @@ export function CoupleSection({ data }: CoupleSectionProps) {
               {/* Name */}
               <h3
                 className="text-3xl md:text-4xl mb-1"
-                style={{ fontFamily: 'var(--font-script)', color: '#e8a0b4' }}
+                style={{ fontFamily: 'var(--font-script)', color: '#64836a' }}
               >
                 {data.bride.name}
               </h3>
               <p
                 className="text-sm font-semibold uppercase tracking-widest mb-5"
-                style={{ fontFamily: 'var(--font-body)', color: '#b89ec4' }}
+                style={{ fontFamily: 'var(--font-body)', color: '#5f7b64' }}
               >
                 The Bride
               </p>
@@ -93,13 +94,13 @@ export function CoupleSection({ data }: CoupleSectionProps) {
                     <div key={key} className="flex gap-3">
                       <span
                         className="text-xs font-semibold uppercase tracking-wider w-24 flex-shrink-0 pt-0.5"
-                        style={{ fontFamily: 'var(--font-body)', color: '#d8c8f2' }}
+                        style={{ fontFamily: 'var(--font-body)', color: '#64836a' }}
                       >
                         {label}
                       </span>
                       <span
                         className="text-sm leading-relaxed"
-                        style={{ fontFamily: 'var(--font-body)', color: '#9b7fa6' }}
+                        style={{ fontFamily: 'var(--font-body)', color: '#5f7b64' }}
                       >
                         {data.bride[key]}
                       </span>
@@ -122,10 +123,10 @@ export function CoupleSection({ data }: CoupleSectionProps) {
               <div className="flex justify-center mb-6">
                 <div
                   className="relative w-36 h-36 rounded-full overflow-hidden"
-                  style={{ background: 'linear-gradient(135deg, #e8d5f5, #d8c8f2)', boxShadow: '0 4px 20px rgba(216, 200, 242, 0.5)' }}
+                  style={{ background: 'linear-gradient(135deg, #e4eddf, #cfe0c8)', boxShadow: '0 4px 20px rgba(92, 130, 91, 0.2)' }}
                 >
                   <Image
-                    src="/illustrations/groom-chibi.svg"
+                    src={assetPath('/illustrations/groom-chibi.svg')}
                     alt="Groom illustration"
                     fill
                     className="object-contain p-2"
@@ -137,13 +138,13 @@ export function CoupleSection({ data }: CoupleSectionProps) {
               {/* Name */}
               <h3
                 className="text-3xl md:text-4xl mb-1"
-                style={{ fontFamily: 'var(--font-script)', color: '#9b7fa6' }}
+                style={{ fontFamily: 'var(--font-script)', color: '#5f7b64' }}
               >
                 {data.groom.name}
               </h3>
               <p
                 className="text-sm font-semibold uppercase tracking-widest mb-5"
-                style={{ fontFamily: 'var(--font-body)', color: '#b89ec4' }}
+                style={{ fontFamily: 'var(--font-body)', color: '#5f7b64' }}
               >
                 The Groom
               </p>
@@ -155,13 +156,13 @@ export function CoupleSection({ data }: CoupleSectionProps) {
                     <div key={key} className="flex gap-3">
                       <span
                         className="text-xs font-semibold uppercase tracking-wider w-24 flex-shrink-0 pt-0.5"
-                        style={{ fontFamily: 'var(--font-body)', color: '#d8c8f2' }}
+                        style={{ fontFamily: 'var(--font-body)', color: '#64836a' }}
                       >
                         {label}
                       </span>
                       <span
                         className="text-sm leading-relaxed"
-                        style={{ fontFamily: 'var(--font-body)', color: '#9b7fa6' }}
+                        style={{ fontFamily: 'var(--font-body)', color: '#5f7b64' }}
                       >
                         {data.groom[key]}
                       </span>

@@ -1,4 +1,5 @@
 import type { Person } from '@/types/wedding';
+import { assetPath } from '@/lib/assetPath';
 
 // Extended Person interface for bride and groom with bio
 interface PersonWithBio extends Person {
@@ -116,15 +117,15 @@ export const weddingData: ExtendedWeddingData = {
   ],
 
   gallery: [
-    { src: '/images/gallery/couple-1.svg',     alt: 'Ashmi and Jeffrin – Couple Portrait',  category: 'Couple'      },
-    { src: '/images/gallery/couple-2.svg',     alt: 'Ashmi and Jeffrin – Romantic Moment',  category: 'Couple'      },
-    { src: '/images/gallery/couple-3.svg',     alt: 'Ashmi and Jeffrin – Together Forever', category: 'Couple'      },
-    { src: '/images/gallery/prewedding-1.svg', alt: 'Pre-Wedding Photoshoot',               category: 'Pre-Wedding' },
-    { src: '/images/gallery/prewedding-2.svg', alt: 'Pre-Wedding Celebration',              category: 'Pre-Wedding' },
-    { src: '/images/gallery/prewedding-3.svg', alt: 'Pre-Wedding Memories',                 category: 'Pre-Wedding' },
-    { src: '/images/gallery/family-1.svg',     alt: 'Family Gathering',                     category: 'Family'      },
-    { src: '/images/gallery/family-2.svg',     alt: 'Family Celebration',                   category: 'Family'      },
-    { src: '/images/gallery/family-3.svg',     alt: 'Family Moments',                       category: 'Family'      },
+    { src: assetPath('/images/gallery/couple-1.svg'),     alt: 'Ashmi and Jeffrin – Couple Portrait',  category: 'Couple'      },
+    { src: assetPath('/images/gallery/couple-2.svg'),     alt: 'Ashmi and Jeffrin – Romantic Moment', category: 'Couple'      },
+    { src: assetPath('/images/gallery/couple-3.svg'),     alt: 'Ashmi and Jeffrin – Together Forever', category: 'Couple'      },
+    { src: assetPath('/images/gallery/prewedding-1.svg'), alt: 'Pre-Wedding Photoshoot',               category: 'Pre-Wedding' },
+    { src: assetPath('/images/gallery/prewedding-2.svg'), alt: 'Pre-Wedding Celebration',              category: 'Pre-Wedding' },
+    { src: assetPath('/images/gallery/prewedding-3.svg'), alt: 'Pre-Wedding Memories',                 category: 'Pre-Wedding' },
+    { src: assetPath('/images/gallery/family-1.svg'),      alt: 'Family Gathering',                     category: 'Family'      },
+    { src: assetPath('/images/gallery/family-2.svg'),     alt: 'Family Celebration',                   category: 'Family'      },
+    { src: assetPath('/images/gallery/family-3.svg'),     alt: 'Family Moments',                        category: 'Family'      },
   ],
 
   navLinks: [

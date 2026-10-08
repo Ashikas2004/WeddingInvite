@@ -37,7 +37,7 @@ export function CountdownSection({ data }: CountdownSectionProps) {
       id="countdown"
       className="section-spacing"
       style={{
-        background: 'linear-gradient(135deg, #ffd8c2 0%, #d8c8f2 50%, #f8d7e3 100%)',
+        background: 'linear-gradient(135deg, #ffd8c2 0%, #dce8d6 50%, #f8d7e3 100%)',
       }}
     >
       <div className="container mx-auto px-4">
@@ -51,13 +51,13 @@ export function CountdownSection({ data }: CountdownSectionProps) {
         >
           <h2
             className="text-4xl md:text-5xl mb-3"
-            style={{ fontFamily: 'var(--font-script)', color: '#9b7fa6' }}
+            style={{ fontFamily: 'var(--font-script)', color: '#5f7b64' }}
           >
             Counting Down
           </h2>
           <p
             className="text-base md:text-lg"
-            style={{ fontFamily: 'var(--font-body)', color: '#b89ec4' }}
+            style={{ fontFamily: 'var(--font-body)', color: '#5f7b64' }}
           >
             Until we say &ldquo;I do&rdquo;
           </p>
@@ -85,13 +85,13 @@ function LiveCountdown({ targetDate }: { targetDate: Date }) {
       <GlassCard variant="strong" className="text-center max-w-2xl mx-auto p-8">
         <p
           className="text-3xl md:text-4xl mb-3"
-          style={{ fontFamily: 'var(--font-script)', color: '#e8a0b4' }}
+          style={{ fontFamily: 'var(--font-script)', color: '#64836a' }}
         >
           Today is the Day! 💕
         </p>
         <p
           className="text-base md:text-lg"
-          style={{ fontFamily: 'var(--font-body)', color: '#b89ec4' }}
+          style={{ fontFamily: 'var(--font-body)', color: '#5f7b64' }}
         >
           Wishing Ashmi &amp; Jeffrin a lifetime of love and happiness.
         </p>
@@ -138,14 +138,14 @@ function CountdownCard({ value, label }: { value: string; label: string }) {
       {/* Number */}
       <div
         className="text-5xl md:text-6xl lg:text-7xl font-bold leading-none mb-2 tabular-nums"
-        style={{ fontFamily: 'var(--font-serif)', color: '#e8a0b4' }}
+        style={{ fontFamily: 'var(--font-serif)', color: '#64836a' }}
       >
         {value}
       </div>
       {/* Label */}
       <div
         className="text-xs md:text-sm uppercase tracking-widest"
-        style={{ fontFamily: 'var(--font-body)', color: '#b89ec4' }}
+        style={{ fontFamily: 'var(--font-body)', color: '#5f7b64' }}
       >
         {label}
       </div>

@@ -1,12 +1,14 @@
 import type { ReactNode } from 'react';
 
 // ============================================
-// PASTEL COLOR PALETTE
+// WEDDING COLOR PALETTE
 // ============================================
 
 export type PastelColor =
   | 'blush-pink'    // #f8d7e3
-  | 'lavender'      // #d8c8f2
+  | 'lavender'      // #dce8d6
+  | 'sage-green'    // #dce8d6
+  | 'forest-green'  // #365d43
   | 'ivory'         // #fffaf2
   | 'soft-peach'    // #ffd8c2
   | 'light-gold';   // #f6d37a

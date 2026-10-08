@@ -16,7 +16,7 @@ export function FamilySection({ data }: FamilySectionProps) {
       id="family"
       className="section-spacing"
       style={{
-        background: 'linear-gradient(160deg, #fce4ec 0%, #f3e5f5 50%, #ffd8c2 100%)',
+        background: 'linear-gradient(160deg, #fce4ec 0%, #e4eddf 50%, #ffd8c2 100%)',
       }}
     >
       <div className="container mx-auto px-6">
@@ -32,20 +32,20 @@ export function FamilySection({ data }: FamilySectionProps) {
           {/* Icon */}
           <div
             className="inline-flex items-center justify-center w-16 h-16 rounded-full mb-5"
-            style={{ background: 'linear-gradient(135deg, #f8d7e3, #d8c8f2)' }}
+            style={{ background: 'linear-gradient(135deg, #f8d7e3, #dce8d6)' }}
           >
-            <Heart size={28} style={{ color: '#9b7fa6', fill: '#9b7fa6' }} />
+            <Heart size={28} style={{ color: '#5f7b64', fill: '#5f7b64' }} />
           </div>
 
           <h2
             className="text-5xl md:text-6xl mb-4"
-            style={{ fontFamily: 'var(--font-script)', color: '#7c4f7c' }}
+            style={{ fontFamily: 'var(--font-script)', color: '#365d43' }}
           >
             Our Family
           </h2>
           <p
             className="text-base md:text-lg max-w-xl mx-auto"
-            style={{ fontFamily: 'var(--font-body)', color: '#9b7fa6' }}
+            style={{ fontFamily: 'var(--font-body)', color: '#5f7b64' }}
           >
             The wonderful people who have supported us throughout our journey
           </p>
@@ -69,13 +69,13 @@ export function FamilySection({ data }: FamilySectionProps) {
                   style={{
                     background: index === 0
                       ? 'linear-gradient(135deg, #f8d7e3, #ffd8c2)'
-                      : 'linear-gradient(135deg, #d8c8f2, #f8d7e3)',
+                      : 'linear-gradient(135deg, #dce8d6, #f8d7e3)',
                     boxShadow: '0 4px 16px rgba(155, 127, 166, 0.2)',
                   }}
                 >
                   <span
                     className="text-3xl"
-                    style={{ fontFamily: 'var(--font-script)', color: '#7c4f7c' }}
+                    style={{ fontFamily: 'var(--font-script)', color: '#365d43' }}
                   >
                     {member.name.charAt(0)}
                   </span>
@@ -84,7 +84,7 @@ export function FamilySection({ data }: FamilySectionProps) {
                 {/* Name */}
                 <h3
                   className="text-xl md:text-2xl font-semibold mb-1"
-                  style={{ fontFamily: 'var(--font-serif)', color: '#7c4f7c' }}
+                  style={{ fontFamily: 'var(--font-serif)', color: '#365d43' }}
                 >
                   {member.name}
                 </h3>
@@ -94,7 +94,7 @@ export function FamilySection({ data }: FamilySectionProps) {
                   className="inline-block text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-4"
                   style={{
                     background: 'rgba(216, 200, 242, 0.35)',
-                    color: '#9b7fa6',
+                    color: '#5f7b64',
                     fontFamily: 'var(--font-body)',
                   }}
                 >
@@ -104,7 +104,7 @@ export function FamilySection({ data }: FamilySectionProps) {
                 {/* Message */}
                 <p
                   className="text-sm md:text-base leading-relaxed"
-                  style={{ fontFamily: 'var(--font-body)', color: '#9b7fa6' }}
+                  style={{ fontFamily: 'var(--font-body)', color: '#5f7b64' }}
                 >
                   {member.message}
                 </p>

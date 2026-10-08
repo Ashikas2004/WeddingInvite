@@ -16,7 +16,7 @@ export function EventsSection({ data }: EventsSectionProps) {
       id="events"
       className="section-spacing"
       style={{
-        background: 'linear-gradient(160deg, #fffaf2 0%, #f8d7e3 50%, #d8c8f2 100%)',
+        background: 'linear-gradient(160deg, #fffaf2 0%, #f8d7e3 50%, #dce8d6 100%)',
       }}
     >
       <div className="container mx-auto px-6">
@@ -31,13 +31,13 @@ export function EventsSection({ data }: EventsSectionProps) {
         >
           <h2
             className="text-5xl md:text-6xl mb-4"
-            style={{ fontFamily: 'var(--font-script)', color: '#7c4f7c' }}
+            style={{ fontFamily: 'var(--font-script)', color: '#365d43' }}
           >
             Wedding Events
           </h2>
           <p
             className="text-base md:text-lg max-w-xl mx-auto"
-            style={{ fontFamily: 'var(--font-body)', color: '#9b7fa6' }}
+            style={{ fontFamily: 'var(--font-body)', color: '#5f7b64' }}
           >
             Join us for these special moments as we celebrate our union
           </p>
@@ -62,18 +62,18 @@ export function EventsSection({ data }: EventsSectionProps) {
                     style={{
                       background: index === 0
                         ? 'linear-gradient(135deg, #ffd8c2, #f8d7e3)'
-                        : 'linear-gradient(135deg, #f8d7e3, #d8c8f2)',
+                        : 'linear-gradient(135deg, #f8d7e3, #dce8d6)',
                     }}
                   >
                     {index === 0
-                      ? <Gem  size={22} style={{ color: '#9b7fa6' }} />
-                      : <Heart size={22} style={{ color: '#9b7fa6', fill: '#9b7fa6' }} />
+                      ? <Gem size={22} style={{ color: '#5f7b64' }} />
+                      : <Heart size={22} style={{ color: '#5f7b64', fill: '#5f7b64' }} />
                     }
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3
                       className="text-xl md:text-2xl font-semibold leading-tight"
-                      style={{ fontFamily: 'var(--font-serif)', color: '#7c4f7c' }}
+                      style={{ fontFamily: 'var(--font-serif)', color: '#365d43' }}
                     >
                       {event.name}
                     </h3>
@@ -83,7 +83,7 @@ export function EventsSection({ data }: EventsSectionProps) {
                       style={{
                         background: index === 0
                           ? 'linear-gradient(90deg, #ffd8c2, #f8d7e3)'
-                          : 'linear-gradient(90deg, #f8d7e3, #d8c8f2)',
+                          : 'linear-gradient(90deg, #f8d7e3, #dce8d6)',
                       }}
                     />
                   </div>
@@ -94,17 +94,17 @@ export function EventsSection({ data }: EventsSectionProps) {
 
                   {/* Date — static string, no new Date() */}
                   <div className="flex items-start gap-3">
-                    <Calendar size={17} className="flex-shrink-0 mt-0.5" style={{ color: '#d8c8f2' }} />
+                    <Calendar size={17} className="flex-shrink-0 mt-0.5" style={{ color: '#64836a' }} />
                     <div>
                       <p
                         className="text-[10px] uppercase tracking-widest font-semibold mb-0.5"
-                        style={{ fontFamily: 'var(--font-body)', color: '#c4a8d4' }}
+                        style={{ fontFamily: 'var(--font-body)', color: '#5f7b64' }}
                       >
                         Date
                       </p>
                       <p
                         className="text-sm md:text-base font-medium"
-                        style={{ fontFamily: 'var(--font-body)', color: '#7c4f7c' }}
+                        style={{ fontFamily: 'var(--font-body)', color: '#365d43' }}
                       >
                         {event.dateDisplay}
                       </p>
@@ -113,17 +113,17 @@ export function EventsSection({ data }: EventsSectionProps) {
 
                   {/* Time */}
                   <div className="flex items-start gap-3">
-                    <Clock size={17} className="flex-shrink-0 mt-0.5" style={{ color: '#d8c8f2' }} />
+                    <Clock size={17} className="flex-shrink-0 mt-0.5" style={{ color: '#64836a' }} />
                     <div>
                       <p
                         className="text-[10px] uppercase tracking-widest font-semibold mb-0.5"
-                        style={{ fontFamily: 'var(--font-body)', color: '#c4a8d4' }}
+                        style={{ fontFamily: 'var(--font-body)', color: '#5f7b64' }}
                       >
                         Time
                       </p>
                       <p
                         className="text-sm md:text-base font-medium"
-                        style={{ fontFamily: 'var(--font-body)', color: '#7c4f7c' }}
+                        style={{ fontFamily: 'var(--font-body)', color: '#365d43' }}
                       >
                         {event.time}
                       </p>
@@ -132,17 +132,17 @@ export function EventsSection({ data }: EventsSectionProps) {
 
                   {/* Venue */}
                   <div className="flex items-start gap-3">
-                    <MapPin size={17} className="flex-shrink-0 mt-0.5" style={{ color: '#d8c8f2' }} />
+                    <MapPin size={17} className="flex-shrink-0 mt-0.5" style={{ color: '#64836a' }} />
                     <div>
                       <p
                         className="text-[10px] uppercase tracking-widest font-semibold mb-0.5"
-                        style={{ fontFamily: 'var(--font-body)', color: '#c4a8d4' }}
+                        style={{ fontFamily: 'var(--font-body)', color: '#5f7b64' }}
                       >
                         Venue
                       </p>
                       <p
                         className="text-sm md:text-base font-medium"
-                        style={{ fontFamily: 'var(--font-body)', color: '#7c4f7c' }}
+                        style={{ fontFamily: 'var(--font-body)', color: '#365d43' }}
                       >
                         {event.venue}
                       </p>
@@ -153,13 +153,13 @@ export function EventsSection({ data }: EventsSectionProps) {
                 {/* Divider */}
                 <div
                   className="h-px mb-4 rounded-full"
-                  style={{ background: 'linear-gradient(90deg, transparent, #d8c8f2, transparent)' }}
+                  style={{ background: 'linear-gradient(90deg, transparent, #7b9c76, transparent)' }}
                 />
 
                 {/* Description */}
                 <p
                   className="text-sm md:text-base leading-relaxed"
-                  style={{ fontFamily: 'var(--font-body)', color: '#9b7fa6' }}
+                  style={{ fontFamily: 'var(--font-body)', color: '#5f7b64' }}
                 >
                   {event.description}
                 </p>
